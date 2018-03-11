@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.market.sqlitedatabase.Home">
+
+    <EditText
+        android:id="@+id/admno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="37dp"
+        android:ems="10"
+        android:hint="Admission Number"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/admno"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignStart="@+id/admno"
+        android:layout_below="@+id/admno"
+        android:layout_marginTop="23dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName" />
+
+    <Spinner
+        android:id="@+id/course"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/name"
+        android:layout_alignStart="@+id/name"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="38dp" />
+
+    <EditText
+        android:id="@+id/tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/course"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignStart="@+id/course"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:hint="Phone No."
+        android:inputType="phone" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:onClick="save"
+        android:text="Save"
+        android:layout_below="@+id/tel"
+        android:layout_alignLeft="@+id/tel"
+        android:layout_alignStart="@+id/tel" />
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:onClick="search"
+        android:text="Search"
+        android:layout_alignBaseline="@+id/save"
+        android:layout_alignBottom="@+id/save"
+        android:layout_toRightOf="@+id/save"
+        android:layout_toEndOf="@+id/save" />
+
+    <Button
+        android:id="@+id/edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="edit"
+        android:text="Edit"
+        android:layout_below="@+id/save"
+        android:layout_alignLeft="@+id/save"
+        android:layout_alignStart="@+id/save"
+        android:layout_marginTop="22dp"
+        android:layout_toLeftOf="@+id/search"
+        android:layout_toStartOf="@+id/search" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/search"
+        android:layout_alignLeft="@+id/search"
+        android:layout_alignRight="@+id/search"
+        android:layout_alignStart="@+id/search"
+        android:layout_alignTop="@+id/edit"
+        android:onClick="viewall"
+        android:text="View All" />
+</RelativeLayout>
