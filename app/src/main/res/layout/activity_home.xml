@@ -88,12 +88,10 @@
         android:layout_height="wrap_content"
         android:onClick="edit"
         android:text="Edit"
+        android:layout_marginTop="20dp"
         android:layout_below="@+id/save"
         android:layout_alignLeft="@+id/save"
-        android:layout_alignStart="@+id/save"
-        android:layout_marginTop="22dp"
-        android:layout_toLeftOf="@+id/search"
-        android:layout_toStartOf="@+id/search" />
+        android:layout_alignStart="@+id/save" />
 
     <Button
         android:id="@+id/button4"
